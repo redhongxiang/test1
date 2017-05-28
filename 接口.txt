@@ -1,0 +1,14 @@
+1.登录验证接口
+  URL:check.php
+
+请求参数:
+    userName string  >=6
+    pwd      string  >=6
+
+
+响应体:
+   {
+     "status":"0",
+     "msg":"用户名或密码不存在"
+    }
+
