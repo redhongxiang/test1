@@ -5,6 +5,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$pwd=$_POST['pwd'];
 	$info=$_POST['info'];
 	include("conn.php");
+	$rs=mysql_query("select * from users where userName='$userName' and pwd='$pwd'");
 	$num=mysql_num_rows($rs);
 	if($num>0){
 		$_SESSION['login']='success';
